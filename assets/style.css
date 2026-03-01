@@ -163,6 +163,88 @@ footer a {
 }
 
 
+/* PROFILES */
+.profile-div {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+}
+.profile-div h1 {
+    font-size: 1.5vw;
+}
+.profile-div p {
+    font-size: 1vw;
+}
+.label {
+    width: 15vw;
+    padding: 0.5vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vw;
+    font-size: 1.8vw;
+    font-weight: bold;
+}
+.coaches-div {
+    width: 100vw;
+    margin-top: 3vw;
+}
+.coaches-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 5vw;
+}
+.coach-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+.profile-circle {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: white;
+    border-color: #8d2d30;
+    border-style: solid;
+}
+.coach-text {
+    width: 20vw;
+}
+.board-div {
+    width: 100vw;
+    margin-top: 3vw;
+}
+.board-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    margin-bottom: 5vw;
+}
+.board-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 10vw;
+}
+.board-circle {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: white;
+    border-color: #CA6702;
+    border-style: solid;
+}
+
+
 /* THEME */
 .theme {
     width: 100vw;
