@@ -113,6 +113,14 @@ footer a {
 .intro-info p {
     font-size: 1vw;
 }
+.menu-bar a {
+    font-size: 1vw;
+    color: white;
+    text-decoration: none;
+}
+.menu-bar a:hover {
+    text-decoration: underline;
+}
 
 .intro-button {
     width: 10vw;
