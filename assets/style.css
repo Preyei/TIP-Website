@@ -151,6 +151,45 @@ footer img:hover {
 }
 
 
+/* REGISTRATION */
+.registration-div {
+    width: 100vw;
+    height: 30vw;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.registration-div p, .registration-div a{
+    font-size: 1.3vw;
+    font-weight: bold;
+}
+.registration-bttns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3vw;
+    gap: 4vw;
+}
+.reg-button {
+    background-color: #9B2226;
+    padding: 0.7vw;
+    color: white;
+    width: 15vw;
+    text-align: center;
+    border-radius: 1vw;
+    text-decoration: none;
+}
+.reg-button:hover {
+    background-color: #8d2d30;
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+}
+
+
 /* FAQ */
 .faq-div {
     width: 100vw;
