@@ -154,13 +154,11 @@ footer img:hover {
 /* REGISTRATION */
 .registration-div {
     width: 100vw;
-    height: 30vw;
-    border-style: solid;
-    border-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 5vw;
 }
 .registration-div p, .registration-div a{
     font-size: 1.3vw;
@@ -184,6 +182,42 @@ footer img:hover {
 }
 .reg-button:hover {
     background-color: #8d2d30;
+    cursor: pointer;
+    border-color: black;
+    border-style: solid;
+}
+.reg-div {
+    width: 100vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+.reg-box {
+    /*width: 30vw;
+    height: 20vw;*/
+    padding: 2vw;
+    border-style: solid;
+    border-color: black;
+    background-color: #FFE9D8;
+    border-radius: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box-button {
+    background-color: #CA6702;
+    padding: 0.7vw;
+    color: white;
+    width: 15vw;
+    text-align: center;
+    border-radius: 1vw;
+    text-decoration: none;
+}
+.box-button:hover {
+    background-color: #bb742e;
     cursor: pointer;
     border-color: black;
     border-style: solid;
