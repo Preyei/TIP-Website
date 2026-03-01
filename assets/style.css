@@ -5,6 +5,61 @@
   /*box-sizing: border-box;*/
 }
 
+body {
+    background-color: #FFF1E6;
+}
+
+footer {
+    background-color: #9B2226;
+    width: 100vw;
+    height: 10vw;
+}
+footer h1 {
+    font-size: 1.8vw;
+}
+footer img:hover {
+    transform: scale(1.2);
+}
+.license {
+    font-size: 1vw;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2vw;
+}
+.contact {
+    width: 25vw;
+    height: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5vw;
+    padding: 0.2vw;
+    overflow: hidden;
+}
+.contact-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0.2vw;
+}
+.logo {
+    width: 25vw;
+    height: 8vw;
+    margin-left: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .intro-image {
     background-image: url("images/intro_crop.JPG");
     background-size: cover;
