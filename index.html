@@ -52,6 +52,59 @@
     
     <div style="background-color: blue; width: 50vw; height: 20vh"></div>
 
+    <div class="faq-div">
+        <h1 style="font-size: 2.5vw">FAQ</h1>
+        <hr>
+        <div class="faq-box" id="faq-1">
+            <h2 style="font-size: 1.5vw">Are meals included in my registration?</h2>
+            <img src="assets/images/Plus circle.png" width="50vw" onclick="expandFAQ('faq-1')">
+        </div>
+        <div class="faq-box-ext" id="faq-1-ext">
+            <div class="faq-box-mini">
+                <h2 style="font-size: 1.5vw">Are meals included in my registration?</h2>
+                <img src="assets/images/Minus circle.png" width="50vw" onclick="collapseFAQ('faq-1-ext')">
+            </div>
+            <p>In person tickets include a fully catered lunch on Saturday.</p>
+        </div>
+        <div class="faq-box" id="faq-2">
+            <h2 style="font-size: 1.5vw">Are tickets refundable?</h2>
+            <img src="assets/images/Plus circle.png" width="50vw" onclick="expandFAQ('faq-2')">
+        </div>
+        <div class="faq-box-ext" id="faq-2-ext">
+            <div class="faq-box-mini">
+                <h2 style="font-size: 1.5vw">Are meals included in my registration?</h2>
+                <img src="assets/images/Minus circle.png" width="50vw" onclick="collapseFAQ('faq-2-ext')">
+            </div>
+            <p>Tickets are non-refundable but can be transferred to someone else if you cannot attend.
+                Please contact us at the canadaparentingsummit@gmail.com before the event.
+            </p>
+        </div>
+        <div class="faq-box" id="faq-3">
+            <h2 style="font-size: 1.5vw">Will there be childcare at the event?</h2>
+            <img src="assets/images/Plus circle.png" width="50vw" onclick="expandFAQ('faq-3')">
+        </div>
+        <div class="faq-box-ext" id="faq-3-ext">
+            <div class="faq-box-mini">
+                <h2 style="font-size: 1.5vw">Are meals included in my registration?</h2>
+                <img src="assets/images/Minus circle.png" width="50vw" onclick="collapseFAQ('faq-3-ext')">
+            </div>
+            <p>Childcare will be available for a fee on a first come, first served basis for a limited number of slots. Please grab your tickets now.</p>
+        </div>
+        <div class="faq-box" id="faq-4">
+            <h2 style="font-size: 1.5vw">Is accommodation included in the registration?</h2>
+            <img src="assets/images/Plus circle.png" width="50vw" onclick="expandFAQ('faq-4')">
+        </div>
+        <div class="faq-box-ext" id="faq-4-ext">
+            <div class="faq-box-mini">
+                <h2 style="font-size: 1.5vw">Are meals included in my registration?</h2>
+                <img src="assets/images/Minus circle.png" width="50vw" onclick="collapseFAQ('faq-4-ext')">
+            </div>
+            <p>Accommodation is not included in the registration fee. However, we recommend booking a hotel or Airbnb for your stay once registration
+                is finalized. Please contact us at canadaparentingsummit@gmail.com 
+            </p>
+        </div>
+    </div>
+
     <div class="sponsor-div">
         <div class="sponsor">
             <h1 style="font-size: 2.5vw">Partner With Us:</h1>
@@ -91,5 +144,17 @@
     </footer>
     
 
+    <script>
+        function expandFAQ(miniID) {
+            let expandedID = miniID.concat("-ext");
+            document.getElementById(miniID).style.display = "none";
+            document.getElementById(expandedID).style.display = "block";
+        }
+        function collapseFAQ(expandedID) {
+            let miniID = expandedID.replace("-ext", "");
+            document.getElementById(miniID).style.display = "flex";
+            document.getElementById(expandedID).style.display = "none";
+        }
+    </script>
 </body>
 </html>
