@@ -242,6 +242,8 @@ footer a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 25vw;
+    height: 25vw;
 }
 .box-button {
     background-color: #CA6702;
