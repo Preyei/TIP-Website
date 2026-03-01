@@ -1,0 +1,120 @@
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 100vw;
+  margin: 0 auto;
+}
+
+/* Vertical line */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 0.5vw;          /* 6px */
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.25vw;  /* -3px */
+}
+
+/* Content container */
+.container {
+  padding: 0.83vw 3.33vw; /* 10px 40px */
+  position: relative;
+  background-color: inherit;
+  width: 25%;
+}
+
+/* Circles */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 2.08vw;          /* 25px */
+  height: 2.08vw;         /* 25px */
+  right: -1.41vw;         /* -17px */
+  background-color: #FEC89A;
+  border: 0.33vw solid black; /* 4px */
+  top: 1.25vw;            /* 15px */
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Left side */
+.left {
+  left: 25%;
+}
+
+/* Right side */
+.right {
+  left: 50%;
+}
+
+/* Left arrow */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.83vw;            /* 22px */
+  width: 0;
+  z-index: 1;
+  right: 2.5vw;           /* 30px */
+  border: medium solid white;
+  border-width: 0.83vw 0 0.83vw 0.83vw; /* 10px 0 10px 10px */
+  border-color: transparent transparent transparent #FEC89A;
+}
+
+/* Right arrow */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 1.83vw;            /* 22px */
+  width: 0;
+  z-index: 1;
+  left: 2.5vw;            /* 30px */
+  border: medium solid white;
+  border-width: 0.83vw 0.83vw 0.83vw 0; /* 10px 10px 10px 0 */
+  border-color: transparent #FEC89A transparent transparent;
+}
+
+/* Fix circle on right */
+.right::after {
+  left: -1.33vw;          /* -16px */
+}
+
+/* Content box */
+.content {
+  padding: 1.66vw 2.5vw;  /* 20px 30px */
+  background-color: #FEC89A;
+  position: relative;
+  border-radius: 0.5vw;   /* 6px */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+
+  .timeline::after {
+    left: 2.58vw;         /* 31px */
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 5.83vw; /* 70px */
+    padding-right: 2.08vw;/* 25px */
+  }
+
+  .container::before {
+    left: 5vw;            /* 60px */
+    border: medium solid white;
+    border-width: 0.83vw 0.83vw 0.83vw 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after, .right::after {
+    left: 1.25vw;         /* 15px */
+  }
+
+  .right {
+    left: 0%;
+  }
+}
