@@ -19,7 +19,7 @@ hr {
 footer {
     background-color: #9B2226;
     width: 100vw;
-    height: 10vw;
+    height: 11vw;
 }
 footer h1 {
     font-size: 1.8vw;
@@ -125,6 +125,39 @@ footer img:hover {
 }
 
 
+/* ABOUT US */
+.about-us-div {
+    width: 100vw;
+    margin-top: 5vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-us-box-div {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-top: 3vw;
+}
+.about-us-box {
+    width: 15vw;
+    height: 25vw;
+    background-color: pink;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2vw;
+}
+.about-us-box p, .about-us-box li {
+    font-size: 1vw;
+}
+
+
 /* THEME */
 .theme {
     width: 100vw;
@@ -195,8 +228,6 @@ footer img:hover {
     gap: 2vw;
 }
 .reg-box {
-    /*width: 30vw;
-    height: 20vw;*/
     padding: 2vw;
     border-style: solid;
     border-color: black;
